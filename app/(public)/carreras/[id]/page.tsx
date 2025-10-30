@@ -53,7 +53,7 @@ export default async function CarreraDetallePage({ params }: { params: Promise<{
       </section>
 
       {/* Info Cards */}
-      <section className="container text-center max-w-5xl mx-auto py-8 bg-muted/30">
+      <section className="container text-center max-w-5xl mx-auto py-8 bg-muted/30 px-4">
         <div className="container">
           <div className="grid grid-cols-2 md:grid-cols-4 gap-4">
             <Card>
@@ -89,7 +89,7 @@ export default async function CarreraDetallePage({ params }: { params: Promise<{
       </section>
 
       {/* Main Content */}
-      <section className="py-16">
+      <section className="py-16 px-4">
         <div className="container max-w-6xl mx-auto">
           <div className="grid lg:grid-cols-3 gap-8">
             {/* Left Column - Main Info */}
@@ -293,13 +293,13 @@ export default async function CarreraDetallePage({ params }: { params: Promise<{
       </section>
 
       {/* CTA Final */}
-      <section className="py-16 bg-muted/30">
+      <section className="py-16 bg-muted/30 ">
         <div className="container text-center max-w-5xl mx-auto">
           <h2 className="text-3xl font-bold mb-4">¿Listo para comenzar?</h2>
           <p className="text-lg text-muted-foreground mb-8 max-w-2xl mx-auto">
             Da el primer paso hacia tu futuro profesional. Nuestro equipo está listo para ayudarte.
           </p>
-          <div className="flex flex-wrap gap-4 justify-center">
+          <div className="flex flex-wrap gap-4 justify-center px-4">
             <Button asChild size="lg">
               <Link href="/admisiones">Proceso de Admisión</Link>
             </Button>

@@ -25,34 +25,54 @@ const valores = [
   },
 ]
 
+const anioFundacion = 1982
+const aniosExperiencia = (new Date().getFullYear() - anioFundacion).toString()
 const cifras = [
-  { numero: "50+", label: "Años de trayectoria" },
-  { numero: "25,000+", label: "Estudiantes activos" },
-  { numero: "1,200+", label: "Docentes calificados" },
-  { numero: "80+", label: "Programas académicos" },
-  { numero: "200+", label: "Convenios internacionales" },
-  { numero: "95%", label: "Empleabilidad de egresados" },
+  { numero: aniosExperiencia, label: "Años de experiencia" },
+  { numero: "1295", label: "Alumnos" },
+  { numero: "276", label: "Trabajadores" },
+  { numero: "5", label: "Niveles educativos" },
 ]
 
 const autoridades = [
   {
-    nombre: "Dr. Carlos Mendoza",
+    nombre: "Dr. Alberto Raviglione",
+    cargo: "Presidente Grupo Educativo ESBA",
+    imagen: "/placeholder.svg?height=300&width=300",
+  },
+  {
+    nombre: "Prof. Estela Pulice",
+    cargo: "Representante Legal Nivel Secundario y Terciario",
+    imagen: "/placeholder.svg?height=300&width=300",
+  },
+  {
+    nombre: "Lic. Miran Beatriz Hermes",
+    cargo: "Representante Legal Nivel Inicial y Primario",
+    imagen: "/placeholder.svg?height=300&width=300",
+  },
+  {
+    nombre: "Prof. Andres Cicerchia",
     cargo: "Rector",
     imagen: "/placeholder.svg?height=300&width=300",
   },
   {
-    nombre: "Dra. María González",
-    cargo: "Vicerrectora Académica",
+    nombre: "CPN Ana María Moroni",
+    cargo: "ViceRector",
     imagen: "/placeholder.svg?height=300&width=300",
   },
   {
-    nombre: "Ing. Roberto Silva",
-    cargo: "Vicerrector de Investigación",
+    nombre: "Prof. Yanina Primón",
+    cargo: "Directora Nivel Inicial y Primaria",
     imagen: "/placeholder.svg?height=300&width=300",
   },
   {
-    nombre: "Lic. Ana Martínez",
-    cargo: "Secretaria General",
+    nombre: "Prof. Sandra Fiorano",
+    cargo: "Vice-Directora Nivel Inicial y Primaria",
+    imagen: "/placeholder.svg?height=300&width=300",
+  },
+  {
+    nombre: "Cont. Liliana Albrech",
+    cargo: "Directora Nivel Secundario",
     imagen: "/placeholder.svg?height=300&width=300",
   },
 ]
@@ -64,10 +84,10 @@ export default function NosotrosPage() {
       <section className="bg-gradient-to-br from-primary via-primary/90 to-accent py-20">
         <div className="container mx-auto px-4">
           <div className="max-w-3xl">
-            <h1 className="text-5xl font-bold text-white mb-6">Sobre Nosotros</h1>
+            <h1 className="text-5xl font-bold text-white mb-6">Acerca del Instituto</h1>
             <p className="text-xl text-white/90">
-              Conoce nuestra historia, misión y compromiso con la excelencia educativa que nos ha posicionado como una
-              de las mejores universidades del país.
+              El Instituto de Estudios Superiores de Santa Fe desarrolla su labor educativa con más de cuatro décadas de
+              experiencia, formando personas y profesionales comprometidos con su comunidad.
             </p>
           </div>
         </div>
@@ -79,20 +99,20 @@ export default function NosotrosPage() {
           <div className="grid md:grid-cols-2 gap-12 items-center">
             <div>
               <Badge className="mb-4">Nuestra Historia</Badge>
-              <h2 className="text-4xl font-bold mb-6">Más de 50 años formando líderes</h2>
+              <h2 className="text-4xl font-bold mb-6">Desde 1982 al servicio de la educación</h2>
               <div className="space-y-4 text-muted-foreground">
                 <p>
-                  Fundada en 1975, nuestra universidad nació con la visión de democratizar el acceso a la educación
-                  superior de calidad y formar profesionales comprometidos con el desarrollo de la sociedad.
+                  El Instituto de Estudios Superiores de Santa Fe inicia sus actividades en abril de 1982 autorizado por
+                  la Superintendencia Nacional de Enseñanza Privada; a partir de diciembre del mismo año se incorpora a
+                  la enseñanza oficial del Ministerio de Educación de la Nación.
                 </p>
                 <p>
-                  A lo largo de cinco décadas, hemos crecido desde un pequeño campus con tres carreras hasta
-                  convertirnos en una institución de prestigio internacional con más de 80 programas académicos y
-                  presencia en múltiples ciudades.
+                  Desde entonces, consolidó una propuesta educativa de calidad, expandiendo su oferta académica y
+                  articulando los distintos niveles educativos con fuerte inserción en la comunidad.
                 </p>
                 <p>
-                  Nuestro compromiso con la innovación educativa, la investigación científica y la responsabilidad
-                  social nos ha permitido formar a más de 150,000 profesionales que hoy lideran en diversos sectores.
+                  El IES sostiene una mirada humanista y de compromiso social, promoviendo la mejora continua y la
+                  formación integral de sus estudiantes.
                 </p>
               </div>
             </div>
@@ -175,9 +195,9 @@ export default function NosotrosPage() {
       <section className="py-16 bg-primary text-white">
         <div className="container mx-auto px-4">
           <div className="text-center mb-12">
-            <h2 className="text-4xl font-bold mb-4">Nuestra Universidad en Números</h2>
+            <h2 className="text-4xl font-bold mb-4">Nuestro Instituto en Números</h2>
           </div>
-          <div className="grid grid-cols-2 md:grid-cols-3 lg:grid-cols-6 gap-8">
+          <div className="grid grid-cols-2 md:grid-cols-4 lg:grid-cols-4 gap-8">
             {cifras.map((cifra, index) => (
               <div key={index} className="text-center">
                 <div className="text-4xl md:text-5xl font-bold mb-2">{cifra.numero}</div>
