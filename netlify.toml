@@ -1,0 +1,13 @@
+[build]
+  command = "pnpm install --frozen-lockfile=false && pnpm build"
+  publish = ".next"
+
+[build.environment]
+  NODE_VERSION = "18"
+
+[[plugins]]
+  package = "@netlify/plugin-nextjs"
+
+# Evitar builds innecesarios en Netlify si no hay cambios relevantes
+[build.processing]
+  skip_processing = true
