@@ -39,8 +39,8 @@ const carrerasDB: Carrera[] = [
     horarios: "Lunes a Viernes de 17 a 22hs",
     titulo_oficial: "Técnico/a Superior en Desarrollo de Software",
     resolucion: "Resolución Ministerial Nro.: 2120/16",
-    fuente_url: "https://iessantafe.edu.ar/desarrollador-de-software/",
-    pdf_url: "https://iessantafe.edu.ar/wp-content/uploads/2019/08/Desarrolador-Software.pdf",
+    fuente_url: "https://Instituto-educativo.edu.ar/desarrollador-de-software/",
+    pdf_url: "https://Instituto-educativo.edu.ar/wp-content/uploads/2019/08/Desarrolador-Software.pdf",
     caracteristicas: [
       "Sistemas Informáticos Personalizados",
       "Desarrollo Web",
@@ -122,8 +122,8 @@ const carrerasDB: Carrera[] = [
     horarios: "Lunes a Viernes de 17 a 22hs",
     titulo_oficial: "Técnico/a Superior en Diseño Digital",
     resolucion: "Resolución Ministerial Nro.: 0254/15",
-    fuente_url: "https://iessantafe.edu.ar/diseno-digital/",
-    pdf_url: "https://iessantafe.edu.ar/wp-content/uploads/2019/08/Disen%CC%83o-Digital.pdf",
+    fuente_url: "https://Instituto-educativo.edu.ar/diseno-digital/",
+    pdf_url: "https://Instituto-educativo.edu.ar/wp-content/uploads/2019/08/Disen%CC%83o-Digital.pdf",
     caracteristicas: [
       "Comunicación digital interactiva",
       "Producción de contenidos multimedia",
@@ -165,7 +165,7 @@ const carrerasDB: Carrera[] = [
     horarios: "Lunes a Viernes de 17 a 22hs",
     titulo_oficial: "Técnico/a Superior en Diseño Gráfico y Visual",
     campo_laboral: "Estudios de diseño, agencias de publicidad, editoriales, medios digitales, freelance.",
-    fuente_url: "https://iessantafe.edu.ar/diseno-grafico-y-visual/",
+    fuente_url: "https://Instituto-educativo.edu.ar/diseno-grafico-y-visual/",
   },
   {
     id: 6,
@@ -181,7 +181,7 @@ const carrerasDB: Carrera[] = [
     horarios: "Lunes a Viernes de 17 a 22hs",
     titulo_oficial: "Técnico/a Superior en Diseño y Producción de Indumentaria",
     campo_laboral: "Industria textil, marcas de moda, talleres de confección, diseño independiente, producción.",
-    fuente_url: "https://iessantafe.edu.ar/diseno-y-produccion-de-indumentaria/",
+    fuente_url: "https://Instituto-educativo.edu.ar/diseno-y-produccion-de-indumentaria/",
   },
   {
     id: 7,
@@ -198,7 +198,7 @@ const carrerasDB: Carrera[] = [
     titulo_oficial: "Analista en Relaciones Públicas",
     campo_laboral:
       "Empresas privadas, organismos públicos, agencias de comunicación, organización de eventos, consultoría.",
-    fuente_url: "https://iessantafe.edu.ar/analista-en-relaciones-publicas/",
+    fuente_url: "https://Instituto-educativo.edu.ar/analista-en-relaciones-publicas/",
   },
 ]
 

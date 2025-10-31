@@ -1,6 +1,6 @@
-# IES Santa Fe — Sitio Web (Next.js)
+# Instituto Educativo — Sitio Web (Next.js)
 
-Sitio institucional del IES Santa Fe construido con Next.js (App Router), TailwindCSS y componentes shadcn/ui. Incluye secciones públicas (Inicio, Carreras, Noticias, Admisiones, Contacto, Portal de Estudiantes) y vistas de detalle para carreras y noticias.
+Sitio institucional del Instituto Superior Educativo (Instituto) construido con Next.js (App Router), TailwindCSS y componentes shadcn/ui. Incluye secciones públicas (Inicio, Carreras, Noticias, Admisiones, Contacto, Portal de Estudiantes) y vistas de detalle para carreras y noticias.
 
 ## Tech stack
 - Next.js 16 (App Router, Turbopack)
@@ -69,7 +69,7 @@ Los datos se cargan desde módulos TypeScript en `lib/data/` a modo de base loca
 - `/noticias` y `/noticias/[id]`
 - `/admisiones`
 - `/contacto`
-- `/portal-estudiantes` (Aula Virtual, Sistema de Gestión IES — enlaces placeholders)
+- `/portal-estudiantes` (Aula Virtual, Sistema de Gestión Instituto — enlaces placeholders)
 
 ## Estilos y layout
 - Header y Footer globales para rutas públicas (controlados por `components/layout-shell.tsx`).
@@ -105,4 +105,4 @@ Actualmente no se requieren variables de entorno para correr localmente. Si más
 3. Abre un PR describiendo alcance y capturas si corresponde.
 
 ## Licencia
-Proyecto académico interno del IES Santa Fe. Uso interno/demostración.
+Proyecto académico interno del Instituto Educativo. Uso interno/demostración.

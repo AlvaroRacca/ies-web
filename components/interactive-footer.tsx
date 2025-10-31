@@ -34,8 +34,8 @@ export function InteractiveFooter() {
           <div className="lg:col-span-1 text-center md:text-left">
            <Link href="/" className="inline-flex items-center cursor-none group mb-6">
             <Image 
-              src="/logo.png" 
-              alt="IES Logo" 
+              src="Instituto.png" 
+              alt="Instituto Logo" 
               width={500} 
               height={500}
               className="h-32 md:h-40 lg:h-50 w-auto group-hover:scale-105 transition-transform duration-300"
@@ -126,7 +126,7 @@ export function InteractiveFooter() {
               <li className="flex gap-3 md:gap-4 text-slate-300 group justify-center md:justify-start">
                 <Mail className="h-5 w-5 md:h-6 md:w-6 shrink-0 text-[#D20537] group-hover:scale-110 transition-transform duration-300" />
                 <span className="group-hover:text-white transition-colors duration-300">
-                  info@ies.edu.ar
+                  info@Instituto.edu.ar
                 </span>
               </li>
             </ul>

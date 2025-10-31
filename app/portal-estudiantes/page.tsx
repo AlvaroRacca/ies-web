@@ -46,7 +46,7 @@ export default function PortalEstudiantesPage() {
                 <div className="mb-3 flex h-12 w-12 items-center justify-center rounded-lg bg-red-50">
                   <LogIn className="h-6 w-6 text-[#D20537]" />
                 </div>
-                <CardTitle className="text-2xl">Sistema de Gestión IES</CardTitle>
+                <CardTitle className="text-2xl">Sistema de Gestión Instituto</CardTitle>
               </CardHeader>
               <CardContent>
                 <p className="text-muted-foreground mb-6">

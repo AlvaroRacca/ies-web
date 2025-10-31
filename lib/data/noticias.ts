@@ -14,53 +14,71 @@ export type Noticia = {
 const noticiasDB: Noticia[] = [
   {
     id: 1,
-    titulo: 'Se llevó adelante la charla "Como ser empresario de las propias ideas"',
-    resumen: "El pasado jueves 24 de abril se desarrolló en el auditorio del IES la charla de la Fundación Logosófica.",
+    titulo: "Se inauguró el nuevo Laboratorio de Innovación Tecnológica",
+    resumen:
+      "El Instituto presentó su nuevo espacio de innovación destinado a proyectos interdisciplinarios de estudiantes de distintas carreras.",
     contenido:
-      'El pasado jueves 24 de abril se desarrolló en el auditorio del IES la charla "Como ser empresario de las propias ideas" de la Fundación Logosófica. Desde el instituto agradecemos a todas las personas que participaron del evento. La charla estuvo enfocada en brindar herramientas para el desarrollo del emprendedurismo y la gestión de ideas innovadoras.',
-    categoria: "Eventos",
-    fecha: "2025-04-28",
-    imagen: "/Noticia1.jpeg",
+      "El pasado viernes 17 de mayo se llevó a cabo la inauguración del nuevo Laboratorio de Innovación Tecnológica del Instituto. Este espacio tiene como objetivo fomentar la creatividad, el trabajo en equipo y el desarrollo de proyectos vinculados a la tecnología, el diseño y la sostenibilidad. La ceremonia contó con la presencia de autoridades institucionales, docentes y alumnos que realizaron demostraciones de sus proyectos en desarrollo.",
+    categoria: "Infraestructura",
+    fecha: "2025-05-18",
+    imagen: "/NOTICIAEJ1.jpg",
     destacada: true,
-    autor: "IES Santa Fe",
+    autor: "Instituto Educativo",
   },
   {
     id: 2,
-    titulo: "Estudiantes del IES visitaron el Museo Etnográfico y Cultural de Santa Fe",
-    resumen: "Los alumnos de tercer año de Diseño Gráfico y Visual realizaron una visita educativa al museo.",
+    titulo: "Alumnos de Educación Inicial participaron en una jornada de lectura en el Jardín Modelo",
+    resumen:
+      "La actividad buscó promover el hábito lector y el contacto temprano con los libros entre los niños y niñas del nivel inicial.",
     contenido:
-      "En lo que fue una enriquecedora jornada, los alumnos de tercer año de la carrera Diseño Gráfico y Visual llevaron adelante una visita al Museo Etnográfico y Cultural de Santa Fe. Durante el recorrido los estudiantes recopilaron información sobre el museo y sus colecciones permanentes para desarrollar proyectos de diseño relacionados con la identidad cultural de la región.",
+      "En el marco del programa ‘Leemos Juntos’, estudiantes del profesorado en Educación Inicial del Instituto visitaron el Jardín Modelo de la ciudad para compartir una jornada de lectura con los más pequeños. Durante la actividad, los futuros docentes prepararon cuentos interactivos, dramatizaciones y talleres de lectura para estimular la imaginación y el lenguaje de los niños. La experiencia fue valorada como altamente positiva tanto por los alumnos como por las maestras del jardín.",
     categoria: "Actividades",
-    fecha: "2025-04-25",
-    imagen: "/noticia2.png",
-    destacada: true,
-    autor: "IES Santa Fe",
+    fecha: "2025-06-05",
+    imagen: "/NOTICIAEJ2.jpeg",
+    destacada: false,
+    autor: "Instituto Educativo",
   },
   {
     id: 3,
-    titulo: "El Instituto firmó un convenio con Textilo S.A. para el desarrollo de pasantías",
-    resumen: "Acuerdo beneficiará a estudiantes de Administración de Empresas con experiencia laboral.",
+    titulo: "Convenio con la Municipalidad de Santa Fe para prácticas profesionales",
+    resumen:
+      "El Instituto firmó un acuerdo para que los estudiantes de Administración y Contabilidad realicen prácticas en distintas áreas municipales.",
     contenido:
-      "El pasado jueves, el IES acordó con Textilo S.A. un convenio para que sus alumnos puedan realizar pasantías dentro de dicha empresa radicada en Desvío Arijón, provincia de Santa Fe. El acuerdo beneficiará a los estudiantes de Administración de Empresas, quienes podrán adquirir experiencias en el ámbito laboral mediante la práctica profesional en una empresa líder del sector textil.",
+      "El Instituto Educativo firmó un convenio con la Municipalidad de Santa Fe para fortalecer la vinculación entre la formación académica y la práctica profesional. A través de este acuerdo, los estudiantes de las carreras de Administración y Contabilidad podrán realizar pasantías supervisadas en áreas de gestión pública, aplicando los conocimientos adquiridos en el aula a contextos reales. Las prácticas comenzarán a partir del próximo semestre y contarán con seguimiento docente.",
     categoria: "Convenios",
-    fecha: "2025-03-10",
-    imagen: "/noticia3.jpg",
+    fecha: "2025-07-12",
+    imagen: "/NOTICIAEJ3.jpg",
     destacada: false,
-    autor: "IES Santa Fe",
+    autor: "Instituto Educativo",
   },
   {
     id: 4,
-    titulo: "Evento de NETWORKING - Día del Programador",
-    resumen: "Jornada especial en el Molino Marconetti para celebrar el Día del Programador.",
+    titulo: "Jornada de Diseño Sustentable 2025",
+    resumen:
+      "Estudiantes y profesionales participaron en charlas y talleres sobre innovación ecológica en el diseño de productos.",
     contenido:
-      'El pasado viernes se realizó en el Molino Marconetti del puerto de Santa Fe una jornada especial organizada por la Tecnicatura superior en Desarrollo de Software para festejar el "Día del Programador" en conjunto con la Escuela de Diseño y Artes Visuales del Liceo Municipal E.D.A.V. que oficiaron de anfitriones. El evento contó con la participación de profesionales del sector tecnológico y estudiantes de ambas instituciones.',
+      "El pasado 3 de septiembre se desarrolló en el auditorio del Instituto la Jornada de Diseño Sustentable 2025, un evento que reunió a especialistas del sector creativo y a alumnos de las carreras de Diseño Gráfico y Diseño de Productos. A lo largo de la jornada se abordaron temáticas relacionadas con la reutilización de materiales, la economía circular y las nuevas tendencias en diseño ecológico. La actividad concluyó con una exposición de proyectos realizados por los estudiantes.",
     categoria: "Eventos",
-    fecha: "2024-09-24",
-    imagen: "/noticia-4.jpg",
+    fecha: "2025-09-03",
+    imagen: "/NOTICIAEJ3.jpg",
+    destacada: true,
+    autor: "Instituto Educativo",
+  },
+   {
+    id: 5,
+    titulo: "Convenio con la Municipalidad de Santa Fe para prácticas profesionales",
+    resumen:
+      "El Instituto firmó un acuerdo para que los estudiantes de Administración y Contabilidad realicen prácticas en distintas áreas municipales.",
+    contenido:
+      "El Instituto Educativo firmó un convenio con la Municipalidad de Santa Fe para fortalecer la vinculación entre la formación académica y la práctica profesional. A través de este acuerdo, los estudiantes de las carreras de Administración y Contabilidad podrán realizar pasantías supervisadas en áreas de gestión pública, aplicando los conocimientos adquiridos en el aula a contextos reales. Las prácticas comenzarán a partir del próximo semestre y contarán con seguimiento docente.",
+    categoria: "Convenios",
+    fecha: "2025-07-12",
+    imagen: "/NOTICIAEJ3.jpg",
     destacada: false,
-    autor: "IES Santa Fe",
+    autor: "Instituto Educativo",
   },
 ]
+
 
 let nextId = 5
 

@@ -337,7 +337,7 @@ export default async function CarreraDetallePage({ params }: { params: Promise<{
                   <Separator />
                   <div className="space-y-2 text-sm">
                     <p>
-                      <span className="font-semibold">Email:</span> info@iessantafe.edu.ar
+                      <span className="font-semibold">Email:</span> info@Instituto-educativo.edu.ar
                     </p>
                     <p>
                       <span className="font-semibold">Teléfono:</span> (0342) 456-7890

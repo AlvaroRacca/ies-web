@@ -36,46 +36,47 @@ const cifras = [
 
 const autoridades = [
   {
-    nombre: "Dr. Alberto Raviglione",
-    cargo: "Presidente Grupo Educativo ESBA",
+    nombre: "Dr. Ricardo Mendéz",
+    cargo: "Presidente Grupo Educativo Horizonte",
     imagen: "/placeholder.svg?height=300&width=300",
   },
   {
-    nombre: "Prof. Estela Pulice",
+    nombre: "Prof. Laura Benítez",
     cargo: "Representante Legal Nivel Secundario y Terciario",
     imagen: "/placeholder.svg?height=300&width=300",
   },
   {
-    nombre: "Lic. Miran Beatriz Hermes",
+    nombre: "Lic. Mariana Roldán",
     cargo: "Representante Legal Nivel Inicial y Primario",
     imagen: "/placeholder.svg?height=300&width=300",
   },
   {
-    nombre: "Prof. Andres Cicerchia",
+    nombre: "Prof. Andrés Villalba",
     cargo: "Rector",
     imagen: "/placeholder.svg?height=300&width=300",
   },
   {
-    nombre: "CPN Ana María Moroni",
-    cargo: "ViceRector",
+    nombre: "CPN Natalia Correa",
+    cargo: "Vicerrectora",
     imagen: "/placeholder.svg?height=300&width=300",
   },
   {
-    nombre: "Prof. Yanina Primón",
-    cargo: "Directora Nivel Inicial y Primaria",
+    nombre: "Prof. Jimena López",
+    cargo: "Directora Nivel Inicial y Primario",
     imagen: "/placeholder.svg?height=300&width=300",
   },
   {
-    nombre: "Prof. Sandra Fiorano",
-    cargo: "Vice-Directora Nivel Inicial y Primaria",
+    nombre: "Prof. Verónica Duarte",
+    cargo: "Vicedirectora Nivel Inicial y Primario",
     imagen: "/placeholder.svg?height=300&width=300",
   },
   {
-    nombre: "Cont. Liliana Albrech",
-    cargo: "Directora Nivel Secundario",
+    nombre: "Cont. Diego Fernández",
+    cargo: "Director Nivel Secundario",
     imagen: "/placeholder.svg?height=300&width=300",
   },
 ]
+
 
 export default function NosotrosPage() {
   return (
@@ -115,14 +116,14 @@ export default function NosotrosPage() {
                   articulando los distintos niveles educativos con fuerte inserción en la comunidad.
                 </p>
                 <p>
-                  El IES sostiene una mirada humanista y de compromiso social, promoviendo la mejora continua y la
+                  El Instituto sostiene una mirada humanista y de compromiso social, promoviendo la mejora continua y la
                   formación integral de sus estudiantes.
                 </p>
               </div>
             </div>
             <div className="relative">
               <img
-                src="/IES1-ok.jpg"
+                src="/Instituto.png"
                 alt="Campus universitario"
                 className="rounded-lg shadow-xl"
               />

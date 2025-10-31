@@ -36,7 +36,7 @@ export function Hero() {
           </h1>
 
           <p className="text-lg md:text-2xl text-white/90 max-w-2xl mx-auto text-pretty mb-8">
-            Formación práctica, docentes expertos y carreras con alta demanda laboral. Elegí el IES y transformá tu futuro.
+            Formación práctica, docentes expertos y carreras con alta demanda laboral. Elegí el Instituto y transformá tu futuro.
           </p>
 
           <div className="flex flex-col sm:flex-row gap-4 justify-center mb-10">

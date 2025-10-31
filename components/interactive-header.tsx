@@ -40,8 +40,8 @@ export function InteractiveHeader() {
           {/* Logo */}
           <Link href="/" className="flex items-center cursor-none group">
             <Image 
-              src="/logo.png" 
-              alt="IES Logo" 
+              src="Instituto.png" 
+              alt="Instituto Logo" 
               width={300} 
               height={300}
               className="h-16 md:h-32 w-auto group-hover:scale-105 transition-transform duration-300"

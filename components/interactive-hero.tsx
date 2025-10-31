@@ -41,7 +41,7 @@ export function InteractiveHero() {
       <div className="absolute inset-0 bg-gradient-to-t from-black/20 to-transparent" />
       <div className="absolute inset-0 bg-[radial-gradient(circle_at_center,rgba(255, 255, 255, 0.1)_0%,transparent_50%)]" />
       {/* <div className="absolute inset-0 bg-[url('/modern-university-aerial.png')] bg-cover bg-center opacity-10 mix-blend-overlay" /> */}
-      <div className="absolute inset-0 bg-[url('/IES1-ok.jpg')] bg-cover bg-center opacity-30 mix-blend-overlay" />
+      <div className="absolute inset-0 bg-[url('/Instituto.png')] bg-cover bg-center opacity-30 mix-blend-overlay" />
       
       {/* Cursor personalizado minimalista */}
       {isHovered && (

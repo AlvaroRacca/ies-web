@@ -12,8 +12,8 @@ const _merriweather = Merriweather({
 })
 
 export const metadata: Metadata = {
-  title: "IES Santa Fe",
-  description: "IES líder en educación superior, investigación e innovación",
+  title: "Instituto Superior Educativo - Instituto",
+  description: "Instituto líder en educación superior, investigación e innovación",
   generator: "v0.app",
 }
 

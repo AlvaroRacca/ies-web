@@ -16,7 +16,7 @@ export function Header() {
             <div className="flex h-12 w-12 items-center justify-center rounded-2xl bg-gradient-to-br from-blue-600 to-cyan-500 shadow-lg">
               <GraduationCap className="h-7 w-7 text-white" />
             </div>
-            <span className="font-sans text-2xl font-black text-slate-900">IES</span>
+            <span className="font-sans text-2xl font-black text-slate-900">Instituto</span>
           </Link>
 
           <nav className="hidden items-center gap-8 md:flex">

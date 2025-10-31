@@ -63,7 +63,7 @@ export function WhyChooseUs() {
           <h2 className="font-sans text-4xl md:text-6xl font-black text-slate-900 mb-6">
             ¿Por qué elegir el{" "}
             <span className="bg-gradient-to-r from-[#D20537] to-[#B8002E] bg-clip-text text-transparent">
-              IES?
+              Instituto?
             </span>
           </h2>
           <p className="text-xl text-slate-600 max-w-3xl mx-auto">

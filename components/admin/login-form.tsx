@@ -45,7 +45,7 @@ export function LoginForm() {
         <Input
           id="email"
           type="email"
-          placeholder="admin@iessantafe.edu"
+          placeholder="admin@Instituto-educativo.edu.ar"
           value={email}
           onChange={(e) => setEmail(e.target.value)}
           required
@@ -63,7 +63,11 @@ export function LoginForm() {
         />
       </div>
       {error && <p className="text-sm text-destructive">{error}</p>}
-      <Button type="submit" className="w-full" disabled={loading}>
+      <Button
+        type="submit"
+        className="w-full rounded-2xl bg-gradient-to-r from-[#D20537] to-[#B8002E] hover:opacity-90"
+        disabled={loading}
+      >
         {loading ? (
           <>
             <Loader2 className="mr-2 h-4 w-4 animate-spin" />
