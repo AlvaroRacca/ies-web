@@ -73,7 +73,7 @@ export function InteractiveHero() {
         <div className="mx-auto max-w-4xl text-center">
 
           {/* Título moderno con gradientes */}
-          <h1 className="font-sans text-5xl md:text-8xl font-black leading-[0.9] text-balance mb-8">
+          <h1 className="font-sans text-5xl md:text-8xl font-black leading-[1.06] text-balance mb-8">
             <span className="block mb-4">
               <span className="bg-gradient-to-r from-white via-blue-100 to-white bg-clip-text text-transparent">
                 Tu{" "}
@@ -88,7 +88,7 @@ export function InteractiveHero() {
                 <div className="absolute -inset-2 bg-gradient-to-r from-blue-400/20 to-cyan-400/20 blur-xl rounded-lg opacity-50"></div>
               </span>
             </span>
-            <span className="block bg-gradient-to-r from-white/95 via-blue-50 to-white/95 bg-clip-text text-transparent">
+            <span className="block bg-gradient-to-r from-white/95 via-blue-50 to-white/95 bg-clip-text text-transparent ">
               empieza <span className="text-blue-300 font-black">ahora</span>
             </span>
           </h1>
