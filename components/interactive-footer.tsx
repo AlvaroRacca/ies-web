@@ -28,21 +28,21 @@ export function InteractiveFooter() {
       <div className="absolute top-0 left-1/4 w-32 h-32 bg-blue-500/10 rounded-full blur-3xl"></div>
       <div className="absolute bottom-0 right-1/3 w-40 h-40 bg-cyan-500/10 rounded-full blur-3xl"></div>
       
-      <div className="container mx-auto px-4 py-16">
-        <div className="grid gap-12 md:grid-cols-2 lg:grid-cols-4">
+      <div className="container mx-auto px-4 py-12 md:py-16">
+        <div className="grid gap-10 md:gap-12 grid-cols-1 md:grid-cols-2 lg:grid-cols-4">
           {/* Logo y descripción */}
-          <div className="lg:col-span-1">
-           <Link href="/" className="flex items-center cursor-none group">
+          <div className="lg:col-span-1 text-center md:text-left">
+           <Link href="/" className="inline-flex items-center cursor-none group mb-6">
             <Image 
               src="/logo.png" 
               alt="IES Logo" 
               width={500} 
               height={500}
-              className="h-50 w-auto group-hover:scale-105 transition-transform duration-300"
+              className="h-32 md:h-40 lg:h-50 w-auto group-hover:scale-105 transition-transform duration-300"
             />
           </Link>
             {/* Redes sociales */}
-            <div className="flex gap-3">
+            <div className="flex gap-3 justify-center md:justify-start">
               {[
                 { icon: Facebook, href: "#", color: "hover:bg-blue-600" },
                 { icon: Twitter, href: "#", color: "hover:bg-sky-500" },
@@ -62,9 +62,9 @@ export function InteractiveFooter() {
           </div>
 
           {/* Académico */}
-          <div>
-            <h3 className="mb-6 font-black text-xl text-white">Académico</h3>
-            <ul className="space-y-4 text-base">
+          <div className="text-center md:text-left">
+            <h3 className="mb-6 font-black text-xl md:text-2xl text-white">Académico</h3>
+            <ul className="space-y-3 md:space-y-4 text-sm md:text-base">
               {[
                 { name: "Carreras de Grado", href: "/carreras" },
                 { name: "Posgrados", href: "/posgrados" },
@@ -75,7 +75,7 @@ export function InteractiveFooter() {
                 <li key={item.name}>
                   <Link 
                     href={item.href} 
-                    className="text-slate-300 transition-all duration-300 hover:text-white hover:translate-x-2 cursor-none inline-block"
+                    className="text-slate-300 transition-all duration-300 hover:text-white md:hover:translate-x-2 cursor-none inline-block font-medium"
                   >
                     {item.name}
                   </Link>
@@ -85,9 +85,9 @@ export function InteractiveFooter() {
           </div>
 
           {/* Servicios */}
-          <div>
-            <h3 className="mb-6 font-black text-xl text-white">Servicios</h3>
-            <ul className="space-y-4 text-base">
+          <div className="text-center md:text-left">
+            <h3 className="mb-6 font-black text-xl md:text-2xl text-white">Servicios</h3>
+            <ul className="space-y-3 md:space-y-4 text-sm md:text-base">
               {[
                 { name: "Admisiones", href: "/admisiones" },
                 { name: "Becas y Financiamiento", href: "/becas" },
@@ -98,7 +98,7 @@ export function InteractiveFooter() {
                 <li key={item.name}>
                   <Link 
                     href={item.href} 
-                    className="text-slate-300 transition-all duration-300 hover:text-white hover:translate-x-2 cursor-none inline-block"
+                    className="text-slate-300 transition-all duration-300 hover:text-white md:hover:translate-x-2 cursor-none inline-block font-medium"
                   >
                     {item.name}
                   </Link>
@@ -108,23 +108,23 @@ export function InteractiveFooter() {
           </div>
 
           {/* Contacto */}
-          <div>
-            <h3 className="mb-6 font-black text-xl text-white">Contacto</h3>
-            <ul className="space-y-6 text-base">
-              <li className="flex gap-4 text-slate-300 group">
-                <MapPin className="h-6 w-6 shrink-0 text-[#D20537] group-hover:scale-110 transition-transform duration-300" />
-                <span className="group-hover:text-white transition-colors duration-300">
+          <div className="text-center md:text-left">
+            <h3 className="mb-6 font-black text-xl md:text-2xl text-white">Contacto</h3>
+            <ul className="space-y-4 md:space-y-6 text-sm md:text-base">
+              <li className="flex gap-3 md:gap-4 text-slate-300 group justify-center md:justify-start">
+                <MapPin className="h-5 w-5 md:h-6 md:w-6 shrink-0 text-[#D20537] group-hover:scale-110 transition-transform duration-300" />
+                <span className="group-hover:text-white transition-colors duration-300 text-left">
                   Av. Universidad 1234, Santa Fe Capital
                 </span>
               </li>
-              <li className="flex gap-4 text-slate-300 group">
-                <Phone className="h-6 w-6 shrink-0 text-[#D20537] group-hover:scale-110 transition-transform duration-300" />
+              <li className="flex gap-3 md:gap-4 text-slate-300 group justify-center md:justify-start">
+                <Phone className="h-5 w-5 md:h-6 md:w-6 shrink-0 text-[#D20537] group-hover:scale-110 transition-transform duration-300" />
                 <span className="group-hover:text-white transition-colors duration-300">
                   +54 342 1234-5678
                 </span>
               </li>
-              <li className="flex gap-4 text-slate-300 group">
-                <Mail className="h-6 w-6 shrink-0 text-[#D20537] group-hover:scale-110 transition-transform duration-300" />
+              <li className="flex gap-3 md:gap-4 text-slate-300 group justify-center md:justify-start">
+                <Mail className="h-5 w-5 md:h-6 md:w-6 shrink-0 text-[#D20537] group-hover:scale-110 transition-transform duration-300" />
                 <span className="group-hover:text-white transition-colors duration-300">
                   info@ies.edu.ar
                 </span>
@@ -136,12 +136,12 @@ export function InteractiveFooter() {
         </div>
 
         {/* Footer bottom */}
-        <div className="mt-16 pt-8 border-t border-white/10">
-          <div className="flex flex-col items-center justify-between gap-6 text-slate-400 md:flex-row">
-            <p className="text-center md:text-left">
+        <div className="mt-12 md:mt-16 pt-6 md:pt-8 border-t border-white/10">
+          <div className="flex flex-col items-center justify-between gap-4 md:gap-6 text-slate-400 md:flex-row">
+            <p className="text-center md:text-left text-xs md:text-sm">
               © 2025 Instituto de Educación Superior. Todos los derechos reservados.
             </p>
-            <div className="flex flex-wrap gap-6 justify-center">
+            <div className="flex flex-wrap gap-4 md:gap-6 justify-center">
               {[
                 { name: "Política de Privacidad", href: "/privacidad" },
                 { name: "Términos y Condiciones", href: "/terminos" },
@@ -150,7 +150,7 @@ export function InteractiveFooter() {
                 <Link 
                   key={item.name}
                   href={item.href} 
-                  className="transition-colors hover:text-white cursor-none text-sm"
+                  className="transition-colors hover:text-white cursor-none text-xs md:text-sm font-medium"
                 >
                   {item.name}
                 </Link>

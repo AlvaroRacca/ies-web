@@ -174,24 +174,30 @@ export default async function CarrerasPage() {
       </section>
 
       {/* CTA Section */}
-      <section className="py-20 bg-gradient-to-r from-[#D20537] to-[#B8002E] text-white relative overflow-hidden">
+      <section className="py-16 md:py-20 bg-gradient-to-r from-[#D20537] to-[#B8002E] text-white relative overflow-hidden">
         <div className="container mx-auto px-4 text-center">
-          <GraduationCap className="h-16 w-16 mx-auto mb-6" />
-          <h2 className="text-4xl md:text-5xl font-black mb-6">¿Listo para comenzar tu futuro?</h2>
-          <p className="text-xl mb-8 max-w-2xl mx-auto">
+          <GraduationCap className="h-12 w-12 md:h-16 md:w-16 mx-auto mb-4 md:mb-6" />
+          <h2 className="text-3xl md:text-4xl lg:text-5xl font-black mb-4 md:mb-6 px-4">
+            ¿Listo para comenzar tu futuro?
+          </h2>
+          <p className="text-base md:text-xl mb-6 md:mb-8 max-w-2xl mx-auto px-4">
             Solicita más información sobre nuestras carreras y da el primer paso hacia tu éxito profesional.
           </p>
-          <div className="flex gap-4 justify-center">
-            <Link href="/admisiones">
-              <Button size="lg" variant="secondary" className="cursor-none rounded-2xl px-8 py-6 font-bold">
+          <div className="flex flex-col sm:flex-row gap-3 md:gap-4 justify-center max-w-lg mx-auto px-4">
+            <Link href="/admisiones" className="w-full sm:w-auto">
+              <Button 
+                size="lg" 
+                variant="secondary" 
+                className="w-full cursor-none rounded-2xl px-6 md:px-8 py-4 md:py-6 font-bold text-sm md:text-base"
+              >
                 Proceso de Admisión
               </Button>
             </Link>
-            <Link href="/contacto">
+            <Link href="/contacto" className="w-full sm:w-auto">
               <Button
                 size="lg"
                 variant="outline"
-                className="bg-transparent border-2 border-white text-white hover:bg-white hover:text-[#D20537] cursor-none rounded-2xl px-8 py-6 font-bold"
+                className="w-full bg-transparent border-2 border-white text-white hover:bg-white hover:text-[#D20537] cursor-none rounded-2xl px-6 md:px-8 py-4 md:py-6 font-bold text-sm md:text-base"
               >
                 Contactar Asesor
               </Button>

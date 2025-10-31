@@ -36,7 +36,7 @@ export function InteractiveHeader() {
       }`}
     >
       <div className="container mx-auto px-4">
-        <div className="flex h-28 items-center justify-between">
+        <div className="flex h-20 md:h-28 items-center justify-between">
           {/* Logo */}
           <Link href="/" className="flex items-center cursor-none group">
             <Image 
@@ -44,20 +44,20 @@ export function InteractiveHeader() {
               alt="IES Logo" 
               width={300} 
               height={300}
-              className="h-32 w-auto group-hover:scale-105 transition-transform duration-300"
+              className="h-16 md:h-32 w-auto group-hover:scale-105 transition-transform duration-300"
             />
           </Link>
 
           {/* Desktop Navigation */}
-          <nav className="hidden items-center gap-8 md:flex">
+          <nav className="hidden items-center gap-6 lg:gap-8 md:flex">
             {menuItems.map((item) => (
               <Link
                 key={item.name}
                 href={item.href}
-                className={`text-sm font-medium transition-colors duration-300 cursor-none ${
+                className={`text-sm lg:text-base font-semibold transition-colors duration-300 cursor-none hover:scale-105 ${
                   isScrolled 
-                    ? 'text-gray-700 hover:text-[#D20537]' 
-                    : 'text-white hover:text-blue-200'
+                    ? 'text-slate-700 hover:text-[#D20537]' 
+                    : 'text-white hover:text-cyan-300'
                 }`}
               >
                 {item.name}
@@ -69,10 +69,10 @@ export function InteractiveHeader() {
           <div className="flex items-center gap-4">
             <Button 
               asChild 
-              className={`hidden md:flex cursor-none rounded-full px-6 py-2 font-medium text-sm transition-all duration-300 ${
+              className={`hidden md:flex cursor-none rounded-2xl px-4 lg:px-6 py-2 font-bold text-sm transition-all duration-300 ${
                 isScrolled 
-                  ? 'bg-[#D20537] hover:bg-[#B8002E] text-white' 
-                  : 'bg-white/20 backdrop-blur-sm text-white hover:bg-white/30'
+                  ? 'bg-[#D20537] hover:bg-[#B8002E] text-white shadow-lg' 
+                  : 'bg-white/20 backdrop-blur-sm text-white hover:bg-white/30 border border-white/30'
               }`}
             >
               <Link href="/portal-estudiantes" className="cursor-none">
@@ -94,30 +94,41 @@ export function InteractiveHeader() {
         </div>
 
         {/* Mobile Menu */}
-        {isMenuOpen && (
-          <nav className="md:hidden bg-white/95 backdrop-blur-xl rounded-xl mt-4 p-4 shadow-lg">
-            <div className="flex flex-col gap-3">
-              {menuItems.map((item) => (
+        <div className={`md:hidden overflow-hidden transition-all duration-500 ease-in-out ${
+          isMenuOpen ? 'max-h-[500px] opacity-100' : 'max-h-0 opacity-0'
+        }`}>
+          <nav className="bg-white/98 backdrop-blur-xl rounded-3xl mt-4 p-8 shadow-2xl border border-slate-100">
+            <div className="flex flex-col gap-1">
+              {menuItems.map((item, index) => (
                 <Link 
                   key={item.name}
                   href={item.href} 
-                  className="block text-sm font-medium text-slate-700 hover:text-blue-600 cursor-none py-2 transition-colors duration-200"
+                  className="block text-lg font-bold text-slate-800 hover:text-[#D20537] hover:bg-red-50 cursor-none py-4 px-5 rounded-2xl transition-all duration-300 hover:translate-x-2"
                   onClick={() => setIsMenuOpen(false)}
+                  style={{
+                    animationDelay: `${index * 50}ms`,
+                    animation: isMenuOpen ? 'slideIn 0.3s ease-out forwards' : 'none'
+                  }}
                 >
                   {item.name}
                 </Link>
               ))}
+              <div className="h-px bg-gradient-to-r from-transparent via-slate-300 to-transparent my-4"></div>
               <Button 
                 asChild 
-                className="w-full cursor-none bg-blue-600 hover:bg-blue-700 rounded-full mt-3"
+                className="w-full cursor-none bg-gradient-to-r from-[#D20537] to-[#B8002E] hover:from-[#B8002E] hover:to-[#D20537] rounded-2xl py-6 font-black text-base shadow-lg hover:shadow-xl transition-all duration-300 hover:scale-105"
               >
-                <Link href="/portal-estudiantes" className="cursor-none">
+                <Link 
+                  href="/portal-estudiantes" 
+                  className="cursor-none"
+                  onClick={() => setIsMenuOpen(false)}
+                >
                   Portal Estudiantes
                 </Link>
               </Button>
             </div>
           </nav>
-        )}
+        </div>
       </div>
     </header>
   )
