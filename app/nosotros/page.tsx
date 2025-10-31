@@ -156,7 +156,7 @@ export default function NosotrosPage() {
               </CardHeader>
               <CardContent>
                 <p className="text-lg text-muted-foreground">
-                  Ser reconocidos como una universidad líder en América Latina por nuestra excelencia académica,
+                  Ser reconocidos como un Instituto líder en América Latina por nuestra excelencia académica,
                   innovación educativa y contribución al desarrollo científico, tecnológico y social de la región.
                 </p>
               </CardContent>

@@ -72,7 +72,7 @@ export default function AdmisionesPage() {
           <div className="text-center mb-12">
             <h2 className="text-4xl font-bold mb-4">Proceso de Admisión</h2>
             <p className="text-xl text-muted-foreground max-w-2xl mx-auto">
-              Sigue estos pasos para formar parte de nuestra universidad
+              Sigue estos pasos para formar parte de nuestro Instituto
             </p>
           </div>
           <div className="grid md:grid-cols-2 lg:grid-cols-4 gap-6">

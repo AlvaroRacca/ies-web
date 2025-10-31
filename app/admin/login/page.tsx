@@ -21,7 +21,7 @@ export default async function LoginPage() {
           <LoginForm />
           <div className="mt-6 p-4 bg-muted rounded-lg">
             <p className="text-sm font-medium mb-2">Credenciales de prueba:</p>
-            <p className="text-sm text-muted-foreground">Email: admin@universidad.edu</p>
+            <p className="text-sm text-muted-foreground">Email: admin@iessantafe.edu</p>
             <p className="text-sm text-muted-foreground">Contraseña: admin123</p>
           </div>
         </CardContent>

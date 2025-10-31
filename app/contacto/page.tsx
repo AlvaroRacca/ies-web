@@ -37,7 +37,7 @@ export default function ContactoPage() {
             </h1>
             <p className="text-xl md:text-2xl text-white/80 leading-relaxed">
               Estamos aquí para ayudarte. Contáctanos y resolveremos todas tus
-              dudas sobre nuestra universidad.
+              dudas sobre nuestro Instituto.
             </p>
           </div>
         </div>

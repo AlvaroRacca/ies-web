@@ -11,7 +11,7 @@ export function Footer() {
               <div className="flex h-10 w-10 items-center justify-center rounded-lg bg-primary">
                 <GraduationCap className="h-6 w-6 text-primary-foreground" />
               </div>
-              <span className="font-serif text-xl font-bold text-foreground">Universidad Nacional</span>
+              <span className="font-serif text-xl font-bold text-foreground">IES Santa Fe</span>
             </Link>
             <p className="mt-4 text-sm text-muted-foreground">
               Formando profesionales de excelencia comprometidos con el desarrollo de la sociedad desde 1950.
@@ -128,7 +128,7 @@ export function Footer() {
               </li>
               <li className="flex gap-2 text-muted-foreground">
                 <Mail className="h-5 w-5 shrink-0" />
-                <span>info@universidad.edu</span>
+                <span>info@iessantafe.edu</span>
               </li>
             </ul>
           </div>
@@ -136,7 +136,7 @@ export function Footer() {
 
         <div className="mt-12 border-t border-border pt-8">
           <div className="flex flex-col items-center justify-between gap-4 text-sm text-muted-foreground md:flex-row">
-            <p>© 2025 Universidad Nacional. Todos los derechos reservados.</p>
+            <p>© 2025 IES Santa Fe. Todos los derechos reservados.</p>
             <div className="flex gap-6">
               <Link href="/privacidad" className="transition-colors hover:text-foreground">
                 Política de Privacidad

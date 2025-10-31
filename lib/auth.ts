@@ -4,7 +4,7 @@ import { cookies } from "next/headers"
 
 // Simulación de autenticación - En producción usar Supabase Auth
 const ADMIN_USER = {
-  email: "admin@universidad.edu",
+  email: "admin@iessantafe.edu",
   password: "admin123",
   name: "Administrador",
   role: "admin",
