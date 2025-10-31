@@ -1,9 +1,9 @@
 import type React from "react"
 import type { Metadata } from "next"
 import { Inter, Merriweather } from "next/font/google"
-import { Analytics } from "@vercel/analytics/next"
 import "./globals.css"
 import { LayoutShell } from "@/components/layout-shell"
+import { GlobalCursor } from "@/components/global-cursor"
 
 const _inter = Inter({ subsets: ["latin"] })
 const _merriweather = Merriweather({
@@ -24,11 +24,11 @@ export default function RootLayout({
 }>) {
   return (
     <html lang="es">
-      <body className={`font-sans antialiased`}>
+      <body className={`font-sans antialiased ${_inter.className}`}>
+        <GlobalCursor />
         <LayoutShell>
           {children}
         </LayoutShell>
-        <Analytics />
       </body>
     </html>
   )

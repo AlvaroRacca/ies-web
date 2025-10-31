@@ -1,21 +1,22 @@
-import { Hero } from "@/components/hero"
-import { Stats } from "@/components/stats"
-import { FeaturedPrograms } from "@/components/featured-programs"
-import { LatestNews } from "@/components/latest-news"
-import { CampusLife } from "@/components/campus-life"
+import { InteractiveHero } from "@/components/interactive-hero"
+import { InteractivePrograms } from "@/components/interactive-programs"
+import { WhyChooseUs } from "@/components/why-choose-us"
 import { Testimonials } from "@/components/testimonials"
-import { CTA } from "@/components/cta"
+import { LatestNews } from "@/components/latest-news"
+import { FloatingCTA } from "@/components/floating-cta"
+import { getCarreras } from "@/lib/data/carreras"
 
-export default function Home() {
+export default async function Home() {
+  const carreras = await getCarreras()
+  
   return (
     <main>
-      <Hero />
-      <Stats />
-      <FeaturedPrograms />
-      <LatestNews />
-      <CampusLife />
+      <InteractiveHero />
+      <InteractivePrograms carreras={carreras} />
+      <WhyChooseUs />
       <Testimonials />
-      <CTA />
+      <LatestNews />
+      <FloatingCTA />
     </main>
   )
 }

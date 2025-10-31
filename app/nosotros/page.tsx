@@ -79,15 +79,19 @@ const autoridades = [
 
 export default function NosotrosPage() {
   return (
-    <div className="min-h-screen">
+    <div className="min-h-screen cursor-none">
       {/* Hero Section */}
-      <section className="bg-gradient-to-br from-primary via-primary/90 to-accent py-20">
+      <section className="bg-gradient-to-br from-slate-900 via-blue-900 to-indigo-900 py-20 md:py-32 relative overflow-hidden">
         <div className="container mx-auto px-4">
-          <div className="max-w-3xl">
-            <h1 className="text-5xl font-bold text-white mb-6">Acerca del Instituto</h1>
-            <p className="text-xl text-white/90">
-              El Instituto de Estudios Superiores de Santa Fe desarrolla su labor educativa con más de cuatro décadas de
-              experiencia, formando personas y profesionales comprometidos con su comunidad.
+          <div className="max-w-4xl relative z-10">
+            <h1 className="font-sans text-5xl md:text-7xl font-black text-white mb-6 leading-tight">
+              Sobre{" "}
+              <span className="bg-gradient-to-r from-blue-400 via-cyan-300 to-blue-400 bg-clip-text text-transparent">
+                Nosotros
+              </span>
+            </h1>
+            <p className="text-xl md:text-2xl text-white/80 leading-relaxed">
+              El Instituto de Estudios Superiores de Santa Fe desarrolla su labor educativa con más de cuatro décadas de experiencia, formando personas y profesionales comprometidos con su comunidad.
             </p>
           </div>
         </div>
@@ -118,7 +122,7 @@ export default function NosotrosPage() {
             </div>
             <div className="relative">
               <img
-                src="/placeholder.svg?height=500&width=600"
+                src="/IES1-ok.jpg"
                 alt="Campus universitario"
                 className="rounded-lg shadow-xl"
               />
@@ -133,7 +137,7 @@ export default function NosotrosPage() {
           <div className="grid md:grid-cols-2 gap-8">
             <Card className="hover:shadow-lg transition-shadow">
               <CardHeader>
-                <Target className="h-12 w-12 text-primary mb-4" />
+                <Target className="h-12 w-12 text-[#D20537] mb-4" />
                 <CardTitle className="text-3xl">Misión</CardTitle>
               </CardHeader>
               <CardContent>
@@ -147,7 +151,7 @@ export default function NosotrosPage() {
 
             <Card className="hover:shadow-lg transition-shadow">
               <CardHeader>
-                <Eye className="h-12 w-12 text-primary mb-4" />
+                <Eye className="h-12 w-12 text-[#D20537] mb-4" />
                 <CardTitle className="text-3xl">Visión</CardTitle>
               </CardHeader>
               <CardContent>
@@ -176,8 +180,8 @@ export default function NosotrosPage() {
               return (
                 <Card key={valor.titulo} className="text-center hover:shadow-lg transition-shadow">
                   <CardHeader>
-                    <div className="mx-auto mb-4 h-16 w-16 rounded-full bg-primary/10 flex items-center justify-center">
-                      <Icon className="h-8 w-8 text-primary" />
+                    <div className="mx-auto mb-4 h-16 w-16 rounded-full bg-red-50 flex items-center justify-center">
+                      <Icon className="h-8 w-8 text-[#D20537]" />
                     </div>
                     <CardTitle className="text-xl">{valor.titulo}</CardTitle>
                   </CardHeader>
@@ -192,7 +196,7 @@ export default function NosotrosPage() {
       </section>
 
       {/* Cifras */}
-      <section className="py-16 bg-primary text-white">
+      <section className="py-16 bg-gradient-to-r from-[#D20537] to-[#B8002E] text-white">
         <div className="container mx-auto px-4">
           <div className="text-center mb-12">
             <h2 className="text-4xl font-bold mb-4">Nuestro Instituto en Números</h2>
@@ -229,7 +233,7 @@ export default function NosotrosPage() {
                     />
                   </div>
                   <CardTitle className="text-xl">{autoridad.nombre}</CardTitle>
-                  <p className="text-primary font-medium">{autoridad.cargo}</p>
+                  <p className="text-[#D20537] font-medium">{autoridad.cargo}</p>
                 </CardHeader>
               </Card>
             ))}

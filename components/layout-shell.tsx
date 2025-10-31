@@ -2,8 +2,8 @@
 
 import { usePathname } from "next/navigation"
 import type React from "react"
-import { Header } from "@/components/header"
-import { Footer } from "@/components/footer"
+import { InteractiveHeader } from "@/components/interactive-header"
+import { InteractiveFooter } from "@/components/interactive-footer"
 
 export function LayoutShell({ children }: { children: React.ReactNode }) {
   const pathname = usePathname() || "/"
@@ -15,9 +15,11 @@ export function LayoutShell({ children }: { children: React.ReactNode }) {
 
   return (
     <>
-      <Header />
-      {children}
-      <Footer />
+      <InteractiveHeader />
+      <main className="min-h-screen">
+        {children}
+      </main>
+      <InteractiveFooter />
     </>
   )
 }

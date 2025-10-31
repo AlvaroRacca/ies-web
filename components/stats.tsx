@@ -3,12 +3,12 @@ import { Users, BookOpen, Award, Globe } from "lucide-react"
 const stats = [
   {
     icon: Users,
-    value: "25,000+",
+    value: "1300+",
     label: "Estudiantes",
   },
   {
     icon: BookOpen,
-    value: "150+",
+    value: "20+",
     label: "Programas Académicos",
   },
   {
@@ -18,8 +18,8 @@ const stats = [
   },
   {
     icon: Globe,
-    value: "80+",
-    label: "Convenios Internacionales",
+    value: "20+",
+    label: "Convenios",
   },
 ]
 

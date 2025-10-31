@@ -1,9 +1,12 @@
 import { notFound } from "next/navigation"
 import { getCarreraById } from "@/lib/data/carreras"
+import { Card, CardContent, CardHeader, CardTitle } from "@/components/ui/card"
 import { Button } from "@/components/ui/button"
-import { Card, CardContent } from "@/components/ui/card"
 import { Badge } from "@/components/ui/badge"
 import { Separator } from "@/components/ui/separator"
+import { Input } from "@/components/ui/input"
+import { Label } from "@/components/ui/label"
+import { Textarea } from "@/components/ui/textarea"
 import {
   Clock,
   GraduationCap,
@@ -14,9 +17,9 @@ import {
   CheckCircle2,
   Calendar,
   FileText,
+  Send,
 } from "lucide-react"
 import Link from "next/link"
-import Image from "next/image"
 
 export default async function CarreraDetallePage({ params }: { params: Promise<{ id: string }> }) {
   const { id } = await params
@@ -27,11 +30,11 @@ export default async function CarreraDetallePage({ params }: { params: Promise<{
   }
 
   return (
-    <div className="min-h-screen">
+    <div className="min-h-screen cursor-none">
       {/* Hero Section */}
-      <section className="bg-gradient-to-br from-primary via-primary/90 to-accent py-16 md:py-24">
+      <section className="bg-gradient-to-br from-slate-900 via-blue-900 to-indigo-900 py-16 md:py-24 relative overflow-hidden">
         <div className="container mx-auto px-4 text-center max-w-5xl">
-          <h1 className="text-4xl md:text-5xl font-bold text-white mb-4 text-balance">
+          <h1 className="font-sans text-4xl md:text-6xl font-black text-white mb-4 text-balance">
             {carrera.nombre}
           </h1>
           <p className="text-white/90 text-lg md:text-xl max-w-3xl text-pretty mx-auto">
@@ -39,12 +42,12 @@ export default async function CarreraDetallePage({ params }: { params: Promise<{
           </p>
           <div className="mt-6 flex flex-wrap gap-3 justify-center">
             {carrera.pdf_url && (
-              <Button asChild size="sm" className="bg-background text-foreground hover:bg-background/90">
+              <Button asChild size="sm" className="bg-white text-[#D20537] hover:bg-white/90 cursor-none rounded-2xl font-semibold">
                 <a href={carrera.pdf_url} target="_blank" rel="noopener noreferrer">Descargar PDF oficial</a>
               </Button>
             )}
             {carrera.fuente_url && (
-              <Button asChild size="sm" variant="outline" className="bg-transparent text-white border-white/50 hover:bg-white/10">
+              <Button asChild size="sm" variant="outline" className="bg-transparent text-white border-white/50 hover:bg-white/10 cursor-none rounded-2xl">
                 <a href={carrera.fuente_url} target="_blank" rel="noopener noreferrer">Ver en sitio oficial</a>
               </Button>
             )}
@@ -58,28 +61,28 @@ export default async function CarreraDetallePage({ params }: { params: Promise<{
           <div className="grid grid-cols-2 md:grid-cols-4 gap-4">
             <Card>
               <CardContent className="p-6 flex flex-col items-center text-center">
-                <Clock className="h-8 w-8 text-primary mb-2" />
+                <Clock className="h-8 w-8 text-[#D20537] mb-2" />
                 <p className="text-sm text-muted-foreground mb-1">Duración</p>
                 <p className="font-semibold">{carrera.duracion}</p>
               </CardContent>
             </Card>
             <Card>
               <CardContent className="p-6 flex flex-col items-center text-center">
-                <MapPin className="h-8 w-8 text-primary mb-2" />
+                <MapPin className="h-8 w-8 text-[#D20537] mb-2" />
                 <p className="text-sm text-muted-foreground mb-1">Modalidad</p>
                 <p className="font-semibold">{carrera.modalidad}</p>
               </CardContent>
             </Card>
             <Card>
               <CardContent className="p-6 flex flex-col items-center text-center">
-                <Users className="h-8 w-8 text-primary mb-2" />
+                <Users className="h-8 w-8 text-[#D20537] mb-2" />
                 <p className="text-sm text-muted-foreground mb-1">Cupos</p>
                 <p className="font-semibold">{carrera.cupos}</p>
               </CardContent>
             </Card>
             <Card>
               <CardContent className="p-6 flex flex-col items-center text-center">
-                <Calendar className="h-8 w-8 text-primary mb-2" />
+                <Calendar className="h-8 w-8 text-[#D20537] mb-2" />
                 <p className="text-sm text-muted-foreground mb-1">Horarios</p>
                 <p className="font-semibold text-sm">{carrera.horarios || "A consultar"}</p>
               </CardContent>
@@ -98,7 +101,7 @@ export default async function CarreraDetallePage({ params }: { params: Promise<{
               {carrera.titulo_oficial && (
                 <div>
                   <div className="flex items-center gap-2 mb-4">
-                    <GraduationCap className="h-6 w-6 text-primary" />
+                    <GraduationCap className="h-6 w-6 text-[#D20537]" />
                     <h2 className="text-2xl font-bold">Título Oficial</h2>
                   </div>
                   <Card>
@@ -114,7 +117,7 @@ export default async function CarreraDetallePage({ params }: { params: Promise<{
               {carrera.caracteristicas && carrera.caracteristicas.length > 0 && (
                 <div>
                   <div className="flex items-center gap-2 mb-4">
-                    <CheckCircle2 className="h-6 w-6 text-primary" />
+                    <CheckCircle2 className="h-6 w-6 text-[#D20537]" />
                     <h2 className="text-2xl font-bold">Características de la Carrera</h2>
                   </div>
                   <Card>
@@ -136,7 +139,7 @@ export default async function CarreraDetallePage({ params }: { params: Promise<{
               {(carrera.materias_primer_anio || carrera.materias_segundo_anio || carrera.materias_tercer_anio) && (
                 <div>
                   <div className="flex items-center gap-2 mb-4">
-                    <BookOpen className="h-6 w-6 text-primary" />
+                    <BookOpen className="h-6 w-6 text-[#D20537]" />
                     <h2 className="text-2xl font-bold">Plan de Estudios</h2>
                   </div>
                   <div className="grid md:grid-cols-3 gap-4">
@@ -193,7 +196,7 @@ export default async function CarreraDetallePage({ params }: { params: Promise<{
               {carrera.perfil_profesional && carrera.perfil_profesional.length > 0 && (
                 <div>
                   <div className="flex items-center gap-2 mb-4">
-                    <Briefcase className="h-6 w-6 text-primary" />
+                    <Briefcase className="h-6 w-6 text-[#D20537]" />
                     <h2 className="text-2xl font-bold">Perfil Profesional</h2>
                   </div>
                   <Card>
@@ -215,7 +218,7 @@ export default async function CarreraDetallePage({ params }: { params: Promise<{
               {carrera.campo_laboral && (
                 <div>
                   <div className="flex items-center gap-2 mb-4">
-                    <Briefcase className="h-6 w-6 text-primary" />
+                    <Briefcase className="h-6 w-6 text-[#D20537]" />
                     <h2 className="text-2xl font-bold">Campo Laboral</h2>
                   </div>
                   <Card>
@@ -229,16 +232,77 @@ export default async function CarreraDetallePage({ params }: { params: Promise<{
 
             {/* Right Column - Sidebar */}
             <div className="space-y-6">
-              {/* CTA Card */}
-              <Card className="bg-primary text-primary-foreground">
-                <CardContent className="p-6 space-y-4">
-                  <h3 className="text-xl font-bold">¿Interesado en esta carrera?</h3>
+              {/* Formulario de Contacto */}
+              <Card className="border-0 shadow-xl rounded-3xl overflow-hidden">
+                <CardHeader className="bg-gradient-to-r from-[#D20537] to-[#B8002E] text-white">
+                  <CardTitle className="text-xl font-black ">¿Interesado en esta carrera?</CardTitle>
                   <p className="text-sm opacity-90">
-                    Inscríbete ahora y comienza tu camino hacia el éxito profesional.
+                    Completá el formulario y te contactaremos a la brevedad.
                   </p>
-                  <Button asChild className="w-full bg-background text-foreground hover:bg-background/90">
-                    <Link href="/contacto">Solicitar Información</Link>
-                  </Button>
+                </CardHeader>
+                <CardContent className="p-6">
+                  <form className="space-y-4">
+                    <div className="space-y-2">
+                      <Label htmlFor="nombre-sidebar">Nombre completo *</Label>
+                      <Input 
+                        id="nombre-sidebar" 
+                        placeholder="Tu nombre" 
+                        required 
+                        className="cursor-none"
+                      />
+                    </div>
+
+                    <div className="space-y-2">
+                      <Label htmlFor="email-sidebar">Email *</Label>
+                      <Input 
+                        id="email-sidebar" 
+                        type="email" 
+                        placeholder="tu@email.com" 
+                        required 
+                        className="cursor-none"
+                      />
+                    </div>
+
+                    <div className="space-y-2">
+                      <Label htmlFor="telefono-sidebar">Teléfono *</Label>
+                      <Input 
+                        id="telefono-sidebar" 
+                        type="tel" 
+                        placeholder="+54 9 342 123-4567" 
+                        required 
+                        className="cursor-none"
+                      />
+                    </div>
+
+                    <div className="space-y-2">
+                      <Label htmlFor="carrera-sidebar">Carrera de interés</Label>
+                      <Input 
+                        id="carrera-sidebar" 
+                        value={carrera.nombre}
+                        readOnly
+                        className="cursor-none bg-slate-50 font-semibold text-[#D20537]"
+                      />
+                    </div>
+
+                    <div className="space-y-2">
+                      <Label htmlFor="mensaje-sidebar">Mensaje (opcional)</Label>
+                      <Textarea 
+                        id="mensaje-sidebar" 
+                        placeholder="Contános tus dudas..." 
+                        rows={3}
+                        className="cursor-none"
+                      />
+                    </div>
+
+                    <Button 
+                      type="submit" 
+                      className="w-full bg-[#D20537] hover:bg-[#B8002E] cursor-none rounded-2xl font-bold" 
+                      size="lg"
+                    >
+                      <Send className="mr-2 h-4 w-4" />
+                      Enviar consulta
+                    </Button>
+                  </form>
                 </CardContent>
               </Card>
 
@@ -282,7 +346,7 @@ export default async function CarreraDetallePage({ params }: { params: Promise<{
                       <span className="font-semibold">WhatsApp:</span> +54 9 342 123-4567
                     </p>
                   </div>
-                  <Button asChild variant="outline" className="w-full bg-transparent">
+                  <Button asChild variant="outline" className="w-full bg-transparent cursor-none hover:border-[#D20537] hover:text-[#D20537] rounded-2xl">
                     <Link href="/contacto">Contactar</Link>
                   </Button>
                 </CardContent>
@@ -300,10 +364,10 @@ export default async function CarreraDetallePage({ params }: { params: Promise<{
             Da el primer paso hacia tu futuro profesional. Nuestro equipo está listo para ayudarte.
           </p>
           <div className="flex flex-wrap gap-4 justify-center px-4">
-            <Button asChild size="lg">
+            <Button asChild size="lg" className="bg-[#D20537] hover:bg-[#B8002E] cursor-none rounded-2xl px-8 py-6 font-bold">
               <Link href="/admisiones">Proceso de Admisión</Link>
             </Button>
-            <Button asChild size="lg" variant="outline">
+            <Button asChild size="lg" variant="outline" className="cursor-none hover:border-[#D20537] hover:text-[#D20537] rounded-2xl px-8 py-6 font-bold">
               <Link href="/carreras">Ver Todas las Carreras</Link>
             </Button>
           </div>

@@ -41,3 +41,44 @@ export const redesOficiales = [
   { nombre: "Instagram", url: "https://www.instagram.com/iessantafe/" },
   { nombre: "YouTube", url: "https://www.youtube.com/@iessantafe" },
 ]
+
+export type Departamento = {
+  area: string
+  responsable?: string
+  email: string
+  telefono?: string
+  horario?: string
+  descripcion?: string
+}
+
+export const departamentos: Departamento[] = [
+  {
+    area: "Soporte Técnico",
+    email: "soporte@iessantafe.edu.ar",
+    telefono: "(0342) 4525658",
+    horario: "Lun a Vie de 9 a 12hs y de 17 a 20hs",
+    descripcion: "Consultas sobre problemas técnicos"
+  },
+  {
+    area: "Secretaría Académica",
+    email: "academica@iessantafe.edu.ar",
+    telefono: "(0342) 4525658 - Int. 101",
+    horario: "Lun a Vie de 8 a 13hs",
+    descripcion: "Trámites académicos, certificados y legajos"
+  },
+  {
+    area: "Administración y Pagos",
+    email: "administracion@iessantafe.edu.ar",
+    telefono: "(0342) 4525658 - Int. 102",
+    horario: "Lun a Vie de 9 a 13hs",
+    descripcion: "Consultas sobre aranceles y formas de pago"
+  },
+  {
+    area: "Biblioteca",
+    email: "biblioteca@iessantafe.edu.ar",
+    telefono: "(0342) 4525658 - Int. 103",
+    horario: "Lun a Vie de 8 a 20hs",
+    descripcion: "Préstamos, consultas bibliográficas"
+  },
+
+]

@@ -20,14 +20,14 @@ export default async function NoticiaDetallePage({
   if (!noticia) return notFound();
 
   return (
-    <div className="min-h-screen">
+    <div className="min-h-screen cursor-none">
       {/* Hero */}
-      <section className="bg-gradient-to-br from-primary via-primary/90 to-accent py-16 md:py-24">
+      <section className="bg-gradient-to-br from-slate-900 via-blue-900 to-indigo-900 py-16 md:py-24 relative overflow-hidden">
         <div className="container mx-auto px-4 text-center max-w-4xl">
-          <Badge variant="secondary" className="w-fit mx-auto mb-3">
+          <Badge variant="secondary" className="w-fit mx-auto mb-3 bg-red-50 text-[#D20537] border border-red-100">
             {noticia.categoria}
           </Badge>
-          <h1 className="text-3xl md:text-5xl font-bold text-white mb-2 text-balance">
+          <h1 className="font-sans text-3xl md:text-6xl font-black text-white mb-2 text-balance">
             {noticia.titulo}
           </h1>
           <div className="mt-2 flex items-center justify-center gap-3 text-white/85 text-sm">
