@@ -74,7 +74,7 @@ const noticiasDB: Noticia[] = [
     categoria: "Convenios",
     fecha: "2025-07-12",
     imagen: "/NOTICIAEJ3.jpg",
-    destacada: false,
+    destacada: true,
     autor: "Instituto Educativo",
   },
 ]
